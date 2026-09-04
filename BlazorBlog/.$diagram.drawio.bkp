@@ -1,0 +1,48 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="x8TXpPIeYJly2sBqpyMj">
+    <mxGraphModel dx="1178" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zR7YMEZ2u0KsioN3N6Nf-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ARTICOLO&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Id Int auto increment NOT NULL,&lt;/div&gt;&lt;div&gt;Autore varchar (100) NOT NULL,&lt;/div&gt;&lt;div&gt;Categoria varchar (30) NOT NULL,&lt;/div&gt;&lt;div&gt;tags varchar (200),&lt;/div&gt;&lt;div&gt;DataPubblicazione date NOT NULL,&lt;/div&gt;&lt;div&gt;VersioneArticolo int,&lt;/div&gt;&lt;div&gt;Commenti ForeignKey&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="260" x="70" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="En4urjNPpaPElMEQFMM9-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="zR7YMEZ2u0KsioN3N6Nf-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="199.8" y="460" as="sourcePoint" />
+            <mxPoint x="199.8" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="En4urjNPpaPElMEQFMM9-7" edge="1" parent="1" source="En4urjNPpaPElMEQFMM9-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="En4urjNPpaPElMEQFMM9-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="570" as="sourcePoint" />
+            <mxPoint x="200" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="En4urjNPpaPElMEQFMM9-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="COMMENTI&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Id int auto increment NOT NULL,&lt;/div&gt;&lt;div&gt;DataPubblicazione date NOT NULL,&lt;/div&gt;&lt;div&gt;VersioneCommento int,&lt;/div&gt;&lt;div&gt;RispostaA FOREIGN KEY&lt;/div&gt;&lt;div&gt;Autore FOREIGN KEY&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="260" x="70" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="En4urjNPpaPElMEQFMM9-9" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" target="En4urjNPpaPElMEQFMM9-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="739.58" as="sourcePoint" />
+            <mxPoint x="480" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="En4urjNPpaPElMEQFMM9-11" edge="1" parent="1" source="En4urjNPpaPElMEQFMM9-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="En4urjNPpaPElMEQFMM9-10" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="One to Many" vertex="1">
+          <mxGeometry height="80" width="80" x="440" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="En4urjNPpaPElMEQFMM9-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="UTENTE&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Id Int auto increment NOT NULL,&lt;/div&gt;&lt;div&gt;DataIscrizione Date NOT NULL,&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="260" x="620" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="En4urjNPpaPElMEQFMM9-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="One to Many" vertex="1">
+          <mxGeometry height="80" width="80" x="160" y="460" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
