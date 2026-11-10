@@ -12,8 +12,8 @@ namespace BlazorBlog.Models.Tables
         public string password { get; set; }
         [Required]
         [StringLength(20)]
-        public string role { get; set; }
-        public List<CommentsTable> comments { get; set; } = new List<CommentsTable>();
+        public bool role { get; set; }
+        public virtual List<CommentsTable> comments { get; set; } = new List<CommentsTable>();
 
     }
 }

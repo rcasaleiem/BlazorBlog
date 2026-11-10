@@ -5,10 +5,8 @@ namespace BlazorBlog.Models.Tables
     public class GenericTable
     {
         [Required]
-        private int Id { get; set; }
+         public int id { get; set; }
         [Required]
-        private DateTime? CreationDate { get; set; }
-
-
+         public DateTime? creationDate { get; set; }
     }
 }
